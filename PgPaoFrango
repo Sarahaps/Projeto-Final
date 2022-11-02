@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>AP - Confeitaria Funcional </title>
+<link rel="icon" type="image/x-icon" href="logoSite.jpg">
+</head>
+<body style="background-color:rgba(252, 241, 248, 0.986)">
+<h1 style="color:rgb(94, 17, 29); text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Adriana Pimentel, Confeitaria Funcional!</h1>
+<p style="text-align:center"><img src="logoSite.jpg" alt="logo AP, Confeitaria Funcional" height= "160" width="160;"></p>
+<hr>
+<br>
+<h2 style="color:rgb(94, 17, 29); text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Pão de Grão de Bico recheado com Frango</h2>
+<br>
+<img src="paoFrango.jpeg" alt="Paozinho recheado com frango" height="530" width="600"/>
