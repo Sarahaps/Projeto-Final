@@ -11,4 +11,5 @@
 <br>
 <h2 style="color:rgb(94, 17, 29); text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Pão de Grão de Bico recheado com Frango</h2>
 <br>
-<img src="paoFrango.jpeg" alt="Paozinho recheado com frango" height="530" width="600"/>
+<img style= "border: 8px double rgb(94, 17, 29); text-align: left;"src="paoFrango.jpeg" alt="Paozinho recheado com frango" height="530" width="600"/>
+
