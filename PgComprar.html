@@ -4,6 +4,7 @@
         <title>AP - Confeitaria Funcional</title>
         <link rel="icon" type="image/x-icon" href="https://github.com/Sarahaps/Projeto-Final/blob/main/logoSite.jpeg?raw=true">
     </head>
+    
     <body style="background-color:rgba(245, 234, 241, 0.986); text-align: center;">
         <h1 style="color:rgb(94, 17, 29); text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Adriana Pimentel, Confeitaria Funcional!</h1>
         <p style="text-align:center"><img src="https://github.com/Sarahaps/Projeto-Final/blob/main/logoSite.jpeg?raw=true" alt="logo AP, Confeitaria Funcional" height= "160" width="160;"></p>
@@ -15,7 +16,7 @@
              <br>
         </h2>
         <h3 style="color: rgb(94, 17, 29); text-align: left;">
-        Por favor, preencha os campos abaixo:
+        Por favor, preencha os campos abaixo com suas informações pessoais:
         </h3>
 
     <div>
@@ -30,6 +31,9 @@
     <input type="email" id="email" name="email" placeholder="Digite seu endereço de email..."> 
     <br>
 
+    <label for="phone"> Número:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Insira um número de telefone nesse formato: 1 1234-5678" pattern="[9]{1} [0-9]{4}-[0-9]{4}" required>
+   
     <label for="rua">Rua:</label>
     <input type="text" id="rua" name="Rua" placeholder="Digite o nome de sua rua...">
 
@@ -45,12 +49,33 @@
       <option value="Primaveira">Urbis</option>
       <option value="Primaveira">Nova Esperança</option>
     </select>
-  
-    <input type="submit" value="Finalizar pedido">
+<br><br>
+
     </form>
    </div>
-        
+   <h3 style="color: rgb(94, 17, 29); text-align: left;">
+    Por favor, preencha os campos abaixo com os detalhes do pagamento:
+    </h3>
+    <div>
+      <h4 style="color: rgb(94, 17, 29);">Método de pagamento:</h4>
+    <p>
+  <input type="radio" id="cartao" name="metodo_pagamento" value="Cartão">
+  <label for="cartao">Cartão de Crédito/Débito</label><br>
+  <input type="radio" id="pix" name="metodo_pagamento" value="Pix">
+  <label for="pix">Pix</label><br>
+  <input type="radio" id="boleto" name="metodo_pagamento" value="Boleto">
+  <label for="boleto">Boleto</label> <br>
+ </p>
+
+
+<input type="submit" value="Finalizar pedido">
+    </div>
+    
    <style>
+    * {
+     box-sizing: border-box;
+    }
+
     input[type=text], select {
       width: 100%;
       padding: 12px 20px;
@@ -84,7 +109,6 @@
       text-align: left;
       color:rgb(94, 17, 29);
     } 
-       
     input[type=text] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
@@ -96,8 +120,15 @@
      width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
+     
      }
-       
+     input[type=tel] {
+     border: 2px solid rgb(94, 17, 29);
+     border-radius: 4px;
+     width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+     }
      input[type=number] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
@@ -105,7 +136,12 @@
       padding: 12px 20px;
       margin: 8px 0;
      }
-    </style>    
+     input[type=radio] {
+     border: 2px solid rgb(94, 17, 29);
+    
+     }
+  
+    </style>
+        
     </body>
 </html>
-    
