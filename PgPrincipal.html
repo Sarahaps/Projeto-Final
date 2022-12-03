@@ -3,18 +3,37 @@
     <head>
         <title>AP - Confeitaria Funcional </title>
         <link rel="icon" type="image/x-icon" href="https://github.com/Sarahaps/Projeto-Final/blob/main/logoSite.jpeg?raw=true">
+        <style>
+            .btn-group .button {
+              background-color: rgb(94,17,29); 
+              border: none;
+              color: rgba(245, 234, 241, 0.986);
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+              border-radius: 10px;
+            }
+            </style>
     </head>
     <body style="background-color:rgba(245, 234, 241, 0.986);">
         <h1 style="color:rgb(94, 17, 29); text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
             Adriana Pimentel, Confeitaria Funcional!</h1>
         <p style="text-align:center"><img src="https://github.com/Sarahaps/Projeto-Final/blob/main/logoSite.jpeg?raw=true" alt="logo AP, Confeitaria Funcional" height= "240" width="250;"></p>
-        <p style="text-align:center">
-            <a href="#Nicho">Nosso nicho e produções</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#queridinhos">Favoritos</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#produtos">Cardápio</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#contato">Fale conosco</a> &nbsp;&nbsp;&nbsp;&nbsp;
-           </p>
-        <hr>
+        
+        <div class="btn-group">
+            <form method="get" action="#Nicho"> <button type="submit"; style="width: 200px; height: 40px; background-color: rgb(94, 17, 29);
+                color: rgba(245, 234, 241, 0.986);font-family: Georgia, 'Times New Roman', Times, serif; font-size: medium; border-radius: 10px;float: left;"> Nosso nicho e produções</button></form>
+            <form method="get" action="#queridinhos"> <button type="submit"; style="width: 200px; height: 40px; background-color: rgb(94, 17, 29);
+                color: rgba(245, 234, 241, 0.986);font-family: Georgia, 'Times New Roman', Times, serif; font-size: medium; border-radius: 10px;float: left;"> Favoritos</button></form>
+         <form method="get" action="#produtos"> <button type="submit"; style="width: 200px; height: 40px; background-color: rgb(94, 17, 29);
+            color: rgba(245, 234, 241, 0.986);font-family: Georgia, 'Times New Roman', Times, serif; font-size: medium; border-radius: 10px; float: left;"> Cardápio</button></form>
+         <form method="get" action="#contato"> <button type="submit"; style="width: 200px; height: 40px; background-color: rgb(94, 17, 29);
+            color: rgba(245, 234, 241, 0.986);font-family: Georgia, 'Times New Roman', Times, serif; font-size: medium; border-radius: 10px; float: left;"> Fale conosco</button></form>                        
+          </div>
+<br><br><br><br>
         <h2 style="color:rgb(94, 17, 29); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" id="Nicho"> 
             Nosso nicho e produções</h2>
         <p style="color:rgb(94, 17, 29); text-align:justify; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
@@ -84,17 +103,18 @@
         <h2 style="color:rgb(94, 17, 29); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" id="produtos"> 
             Disponíveis no cardápio</h2>
             <details> 
-                <summary> Pães </summary>
-                    <p> Grão de Bico com óleo de coco</p>
+                <summary style="color:rgb(94, 17, 29)"> Pães </summary>
+                    <p> Grão de Bico</p>
                     <p> Grão de Bico Salgado</p>
                     <p> Grão de Bico Recheado com Frango</p>
                     <p> Uva Passa</p>
                     <p> Uva Passa 0% açúcar</p>
                     <p> Batata Doce</p>
+                    <p> Bisnagas de Batata Doce </p>
             </details>
             <br>
         <details>
-            <summary>Bolos</summary>
+            <summary style="color:rgb(94, 17, 29)">Bolos</summary>
                 <p> Chocolate</p>
                 <p> Chocolate (vegano)</p>
                 <p> Chocolate 0% açúcar</p>
@@ -104,9 +124,10 @@
             </details>
             <br>
             <details>
-                <summary> Biscoitos </summary>
-                    <p>Castanha de Caju e cacau (sortidos)</p>
-                    <p>Castanha de Caju e cacau 0% açúcar (sortidos) </p>
+                <summary style="color:rgb(94, 17, 29)"> Biscoitos </summary>
+                    <p>Castanha de Caju (sortidos)</p>
+                    <p>Castanha de Caju e cacau (sortidos) </p>
+                    <p>Cookies de Castanha de caju</p>
             </details>
             <br>
             <a target="_blank" href="PgPaesBiscoitos.html"> Pães e Biscoitos: Acesse e faça seu Pedido!</a>
