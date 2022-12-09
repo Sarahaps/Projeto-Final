@@ -20,7 +20,7 @@
         </h3>
 
     <div>
-     <form action="/action_page.php">
+     
     <label for="PNome">Primeiro nome:</label>
     <input type="text" id="PNome" name="primeiroNome" placeholder="Digite seu nome...">
 
@@ -32,7 +32,7 @@
     <br>
 
     <label for="phone"> Número:</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="Insira um número de telefone nesse formato: 1 1234-5678" pattern="[9]{1} [0-9]{4}-[0-9]{4}" required>
+    <input type="tel" id="phone" name="phone" placeholder="Insira um número de telefone nesse formato: 0 0000-0000" pattern="[9]{1} [0-9]{4}-[0-9]{4}" required>
    
     <label for="rua">Rua:</label>
     <input type="text" id="rua" name="Rua" placeholder="Digite o nome de sua rua...">
@@ -45,9 +45,10 @@
       <option value="Cruzeiro">Cruzeiro</option>
       <option value="Entrocamento">Entrocamento</option>
       <option value="Primaveira">Primaveira</option>
-      <option value="Primaveira">Rodeador</option>
-      <option value="Primaveira">Urbis</option>
-      <option value="Primaveira">Nova Esperança</option>
+      <option value="Rodeador">Rodeador</option>
+      <option value="Urbis">Urbis</option>
+      <option value="NEsperanca">Nova Esperança</option>
+      <option value="Centro">Centro</option>
     </select>
 <br><br>
 
@@ -58,15 +59,40 @@
     </h3>
     <div>
       <h4 style="color: rgb(94, 17, 29);">Método de pagamento:</h4>
-    <p>
+  
   <input type="radio" id="cartao" name="metodo_pagamento" value="Cartão">
   <label for="cartao">Cartão de Crédito/Débito</label><br>
   <input type="radio" id="pix" name="metodo_pagamento" value="Pix">
   <label for="pix">Pix</label><br>
   <input type="radio" id="boleto" name="metodo_pagamento" value="Boleto">
   <label for="boleto">Boleto</label> <br>
- </p>
+  <br>
 
+  <label for="numCartao"> Número do cartão:</label><br>
+  <input type="tel" id="numCartao" name="numeroCartao" placeholder="Insira o número do seu cartão nesse formato: 0000-0000-0000" pattern="[0-9]{4} [0-9]{4}-[0-9]{4}" required>
+   <br><br>
+
+  <label for="rua"> Nome do cartão:</label><br>
+  <input type="radio" name="imagem" id="visa" />
+  <label for="visa"><img src="https://blog.vindi.com.br/wp-content/uploads/2020/02/visa.jpg" alt="" height="50px" width="80px";></label>
+  <input type="radio" name="imagem" id="hipercard" />
+  <label for="hipercard"><img src="https://www.sondadelivery.com.br/Scripts/samples/img/bandeiras/hipercard-logo.png" alt="" height="50px" width="80px"></label>
+  <input type="radio" name="imagem" id="elo" />
+  <label for="elo"><img src="https://logodownload.org/wp-content/uploads/2017/04/elo-logo-1.png" alt="" height="50px" width="80px"></label>
+  <input type="radio" name="imagem" id="master" />
+  <label for="master"><img src="https://investidorsardinha.r7.com/wp-content/uploads/2021/08/bandeiras-de-cartao-de-credito-o-que-sao-e-quais-as-principais-no-brasil-2.jpg" alt="" height="50px" width="80px"></label>
+<br>
+<br>
+
+<label for="validade"> Validade do Cartão:</label><br>
+<input type="date" name="validade" placeholder="mm-yyyy" value="" min="2014-01" max="2030-12">
+<br>
+<br>
+<label for="cvv"> Código de segurança:</label><br>
+  <input type="tel" id="cvv" name="codigoSeguranca" placeholder="000" pattern="[0-9]{3}" required>
+   <br><br>
+<label for="parcelamento">Opções de parcelamento:</label>
+<input type="number" id="parcelamento" name="Parcelamento" placeholder="Selecione em quantas vezes deseja parcelar a compra" min="1" max="6">
 
 <input type="submit" value="Finalizar pedido">
     </div>
@@ -93,7 +119,7 @@
       padding: 12px 20px;
       margin: 4px 2px;
       border: none;
-      border-radius: 4px;
+      border-radius: 40px;
       cursor: pointer;
       float: right;
     }
@@ -140,7 +166,7 @@
      border: 2px solid rgb(94, 17, 29);
     
      }
-  
+     
     </style>
         
     </body>
