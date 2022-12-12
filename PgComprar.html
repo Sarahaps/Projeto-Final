@@ -21,26 +21,25 @@
 
     <div>
      
-    <label for="PNome">Primeiro nome:</label>
+    <label for="PNome">Primeiro nome:</label><br>
     <input type="text" id="PNome" name="primeiroNome" placeholder="Digite seu nome...">
-
-    <label for="SNome">Sobrenome:</label>
+<br>
+    <label for="SNome">Sobrenome:</label><br>
     <input type="text" id="SNome" name="sobrenome" placeholder="Digite seu sobrenome...">
-
-    <label for="email"> Email:</label>
+<br>
+    <label for="email"> Email:</label><br>
     <input type="email" id="email" name="email" placeholder="Digite seu endereço de email..."> 
-    <br>
-
-    <label for="phone"> Número:</label><br>
+<br>
+    <label for="phone"> Número de telefone:</label><br>
     <input type="tel" id="phone" name="phone" placeholder="Insira um número de telefone nesse formato: 0 0000-0000" pattern="[9]{1} [0-9]{4}-[0-9]{4}" required>
-   
-    <label for="rua">Rua:</label>
+<br>   
+    <label for="rua">Rua:</label><br>
     <input type="text" id="rua" name="Rua" placeholder="Digite o nome de sua rua...">
-
-    <label for="numero">Nº da casa:</label>
+<br>
+    <label for="numero">Nº da casa:</label> <br>
     <input type="number" id="numero" name="Numero" placeholder="Insira o numero de sua residencia...">
-
-    <label for="bairro">Bairro:</label>
+<br>
+    <label for="bairro">Bairro:</label><br>
     <select id="bairro" name="Bairro">
       <option value="Cruzeiro">Cruzeiro</option>
       <option value="Entrocamento">Entrocamento</option>
@@ -51,7 +50,6 @@
       <option value="Centro">Centro</option>
     </select>
 <br><br>
-
     </form>
    </div>
    <h3 style="color: rgb(94, 17, 29); text-align: left;">
@@ -72,7 +70,7 @@
   <input type="tel" id="numCartao" name="numeroCartao" placeholder="Insira o número do seu cartão nesse formato: 0000-0000-0000" pattern="[0-9]{4} [0-9]{4}-[0-9]{4}" required>
    <br><br>
 
-  <label for="rua"> Nome do cartão:</label><br>
+  <label for="visa"> Nome do cartão:</label><br>
   <input type="radio" name="imagem" id="visa" />
   <label for="visa"><img src="https://blog.vindi.com.br/wp-content/uploads/2020/02/visa.jpg" alt="" height="50px" width="80px";></label>
   <input type="radio" name="imagem" id="hipercard" />
@@ -89,11 +87,11 @@
 <br>
 <br>
 <label for="cvv"> Código de segurança:</label><br>
-  <input type="tel" id="cvv" name="codigoSeguranca" placeholder="000" pattern="[0-9]{3}" required>
+  <input type="number" id="cvv" name="codigoSeguranca" placeholder="000" pattern="[0-9]{3}" required>
    <br><br>
-<label for="parcelamento">Opções de parcelamento:</label>
+<label for="parcelamento">Opções de parcelamento:</label><br>
 <input type="number" id="parcelamento" name="Parcelamento" placeholder="Selecione em quantas vezes deseja parcelar a compra" min="1" max="6">
-
+<br>
 <p style="text-align:left"> <a href="PgFInalizarPedido.html"> <input type="submit" style="width: 230px; height: 50px;
   background-color:rgb(94,17,29); color: rgba(245, 234, 241, 0.986); font-family:Georgia, 
     'Times New Roman', Times, serif; font-size: medium; border-radius: 60px;" value="Finalizar pedido">
@@ -105,7 +103,7 @@
     }
 
     input[type=text], select {
-      width: 100%;
+      width: 45%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
@@ -136,16 +134,19 @@
       padding: 20px;
       text-align: left;
       color:rgb(94, 17, 29);
+     
+  
     } 
     input[type=text] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
+     width: 45%;
      }
      
      input[type=email] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
-     width: 100%;
+     width: 35%;
       padding: 12px 20px;
       margin: 8px 0;
      
@@ -153,14 +154,14 @@
      input[type=tel] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
-     width: 100%;
+     width: 35%;
       padding: 12px 20px;
       margin: 8px 0;
      }
      input[type=number] {
      border: 2px solid rgb(94, 17, 29);
      border-radius: 4px;
-     width: 100%;
+     width: 25%;
       padding: 12px 20px;
       margin: 8px 0;
      }
@@ -168,8 +169,7 @@
      border: 2px solid rgb(94, 17, 29);
     
      }
-     
-  
+   
     </style>
         
     </body>
